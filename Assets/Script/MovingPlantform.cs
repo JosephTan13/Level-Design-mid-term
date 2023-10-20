@@ -11,14 +11,11 @@ public class MovingPlanform : MonoBehaviour
 
     public int i;
 
-    public CameraFollow CameraFollow;
 
     // Start is called before the first frame update
     void Start()
     {
         transform.position = points[startingPoint].position;
-
-        CameraFollow = Camera.main.GetComponent<CameraFollow>();
     }
 
     // Update is called once per frame
@@ -42,8 +39,6 @@ public class MovingPlanform : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.transform.SetParent(transform);
-
-            CameraFollow.ToggleFollowing(false);
         }
 
     }
@@ -54,8 +49,6 @@ public class MovingPlanform : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.transform.SetParent(null);
-
-            CameraFollow.ToggleFollowing(true);
         }
     }
 
