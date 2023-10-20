@@ -8760,7 +8760,6 @@ MonoBehaviour:
   - {fileID: 1215803311}
   - {fileID: 463889566}
   i: 0
-  CameraFollow: {fileID: 0}
 --- !u!68 &1823334744
 EdgeCollider2D:
   m_ObjectHideFlags: 0
