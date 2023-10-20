@@ -15,7 +15,7 @@ namespace SupanthaPaul
 		public Vector3 minCamerabounds;
 		public Vector3 maxCamerabounds;
 
-		//public 
+		//public aiosnf
 		private bool isFollowing = true;
 
         private void FixedUpdate()
